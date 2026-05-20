@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "category": "Arrays",
+    "description": "Given an array of integers, return indices of the two numbers such that they add up to a specific target.",
+    "inputFormat": "nums = [2,7,11,15], target = 9",
+    "outputFormat": "[0,1]",
+    "constraints": "2 <= nums.length <= 1e5",
+    "sampleInput": "[2,7,11,15],9",
+    "sampleOutput": "[0,1]",
+    "starterCode": { "java": "...", "python": "...", "javascript": "..." },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "testCases": ["[2,7,11,15],9 -> [0,1]"],
+    "tags": ["array","hashmap"],
+    "acceptance": 49.1,
+    "likes": 12450,
+    "dislikes": 210,
+    "companyTags": ["Google","Amazon"],
+    "premium": false,
+    "frequencyLevel": "High",
+    "contestOrigin": "LeetCode"
+  }
+]

@@ -1,0 +1,2232 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "category": "Arrays",
+    "description": "Given an array of integers and a target value, return the indices of the two numbers that add up to the target.",
+    "constraints": [
+      "2 <= nums.length <= 10^4",
+      "-10^9 <= nums[i] <= 10^9",
+      "-10^9 <= target <= 10^9"
+    ],
+    "inputFormat": "Array of integers and target integer",
+    "outputFormat": "Array of two indices",
+    "examples": [
+      {
+        "input": "nums = [2,7,11,15], target = 9",
+        "output": "[0,1]",
+        "explanation": "nums[0] + nums[1] = 9"
+      },
+      {
+        "input": "nums = [3,2,4], target = 6",
+        "output": "[1,2]",
+        "explanation": "nums[1] + nums[2] = 6"
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[] twoSum(int[] nums, int target) { return new int[0]; } }",
+      "python": "class Solution:\n    def twoSum(self, nums, target):\n        pass",
+      "javascript": "function twoSum(nums, target) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "testCases": [
+      "nums = [2,7,11,15], target = 9 -> [0,1]",
+      "nums = [3,2,4], target = 6 -> [1,2]",
+      "nums = [3,3], target = 6 -> [0,1]",
+      "nums = [-1,-2,-3,-4,-5], target = -8 -> [2,4]",
+      "nums = [0,4,3,0], target = 0 -> [0,3]",
+      "nums = [1000000000,-1000000000,5,7], target = 12 -> [2,3]"
+    ],
+    "tags": [
+      "array",
+      "hashmap"
+    ],
+    "acceptance": "52.4%",
+    "likes": 12000,
+    "dislikes": 500,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 2,
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "category": "Stack",
+    "description": "Given a string containing only parentheses, determine if the input string is valid.",
+    "constraints": [
+      "1 <= s.length <= 10^4",
+      "s consists of parentheses characters '()[]{}'."
+    ],
+    "inputFormat": "String s",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "s = \"()[]{}\"",
+        "output": "true",
+        "explanation": "Each opening bracket is closed by the same type in the correct order."
+      },
+      {
+        "input": "s = \"([)]\"",
+        "output": "false",
+        "explanation": "The brackets are not closed in the correct order."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean isValid(String s) { return false; } }",
+      "python": "class Solution:\n    def isValid(self, s):\n        pass",
+      "javascript": "function isValid(s) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "stack",
+      "string"
+    ],
+    "acceptance": "42.9%",
+    "likes": 8600,
+    "dislikes": 210,
+    "companyTags": [
+      "Facebook",
+      "Uber"
+    ],
+    "premium": false
+  },
+  {
+    "id": 3,
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "category": "Arrays",
+    "description": "Given prices for a stock on each day, return the maximum profit you can achieve by buying and selling once.",
+    "constraints": [
+      "1 <= prices.length <= 10^5",
+      "0 <= prices[i] <= 10^5"
+    ],
+    "inputFormat": "Array of stock prices",
+    "outputFormat": "Integer maximum profit",
+    "examples": [
+      {
+        "input": "prices = [7,1,5,3,6,4]",
+        "output": "5",
+        "explanation": "Buy at 1 and sell at 6 for profit 5."
+      },
+      {
+        "input": "prices = [7,6,4,3,1]",
+        "output": "0",
+        "explanation": "No profitable transaction is possible."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int maxProfit(int[] prices) { return 0; } }",
+      "python": "class Solution:\n    def maxProfit(self, prices):\n        pass",
+      "javascript": "function maxProfit(prices) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "greedy"
+    ],
+    "acceptance": "45.3%",
+    "likes": 9400,
+    "dislikes": 320,
+    "companyTags": [
+      "Microsoft",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 4,
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "category": "HashMap",
+    "description": "Determine if any value appears at least twice in the array.",
+    "constraints": [
+      "1 <= nums.length <= 10^5",
+      "-10^9 <= nums[i] <= 10^9"
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "nums = [1,2,3,1]",
+        "output": "true",
+        "explanation": "The number 1 appears twice."
+      },
+      {
+        "input": "nums = [1,2,3,4]",
+        "output": "false",
+        "explanation": "All elements are unique."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean containsDuplicate(int[] nums) { return false; } }",
+      "python": "class Solution:\n    def containsDuplicate(self, nums):\n        pass",
+      "javascript": "function containsDuplicate(nums) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "array",
+      "hashmap"
+    ],
+    "acceptance": "52.1%",
+    "likes": 6900,
+    "dislikes": 190,
+    "companyTags": [
+      "Apple",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 5,
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "category": "Arrays",
+    "description": "Merge two sorted arrays where the first has enough space to hold the combined elements.",
+    "constraints": [
+      "nums1.length == m + n",
+      "nums2.length == n",
+      "-10^9 <= nums1[i], nums2[i] <= 10^9"
+    ],
+    "inputFormat": "Two sorted integer arrays and their sizes",
+    "outputFormat": "Merged sorted array in nums1",
+    "examples": [
+      {
+        "input": "nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3",
+        "output": "[1,2,2,3,5,6]",
+        "explanation": "nums1 and nums2 are merged in sorted order."
+      },
+      {
+        "input": "nums1 = [1], m = 1, nums2 = [], n = 0",
+        "output": "[1]",
+        "explanation": "nums2 is empty, so nums1 remains unchanged."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public void merge(int[] nums1, int m, int[] nums2, int n) { } }",
+      "python": "class Solution:\n    def merge(self, nums1, m, nums2, n):\n        pass",
+      "javascript": "function merge(nums1, m, nums2, n) {\n}"
+    },
+    "timeComplexity": "O(m+n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ],
+    "acceptance": "48.7%",
+    "likes": 5400,
+    "dislikes": 140,
+    "companyTags": [
+      "Adobe",
+      "Microsoft"
+    ],
+    "premium": false
+  },
+  {
+    "id": 6,
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "category": "Binary Search",
+    "description": "Search for a target value in a sorted array and return its index or -1 if not found.",
+    "constraints": [
+      "1 <= nums.length <= 10^4",
+      "-10^4 <= nums[i], target <= 10^4",
+      "nums is sorted in ascending order"
+    ],
+    "inputFormat": "Sorted array of integers and target integer",
+    "outputFormat": "Index of target or -1",
+    "examples": [
+      {
+        "input": "nums = [-1,0,3,5,9,12], target = 9",
+        "output": "4",
+        "explanation": "9 is found at index 4."
+      },
+      {
+        "input": "nums = [-1,0,3,5,9,12], target = 2",
+        "output": "-1",
+        "explanation": "2 is not in the array."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int search(int[] nums, int target) { return -1; } }",
+      "python": "class Solution:\n    def search(self, nums, target):\n        pass",
+      "javascript": "function search(nums, target) {\n    return -1;\n}"
+    },
+    "timeComplexity": "O(log n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "binary-search",
+      "array"
+    ],
+    "acceptance": "48.3%",
+    "likes": 6100,
+    "dislikes": 170,
+    "companyTags": [
+      "Stripe",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 7,
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "category": "Linked List",
+    "description": "Reverse a singly linked list and return the reversed list.",
+    "constraints": [
+      "The number of nodes in the list is in the range [0, 5000]",
+      "-5000 <= Node.val <= 5000"
+    ],
+    "inputFormat": "Linked list head",
+    "outputFormat": "Reversed linked list head",
+    "examples": [
+      {
+        "input": "head = [1,2,3,4,5]",
+        "output": "[5,4,3,2,1]",
+        "explanation": "The list is reversed."
+      },
+      {
+        "input": "head = [1,2]",
+        "output": "[2,1]",
+        "explanation": "The order of nodes is reversed."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public ListNode reverseList(ListNode head) { return head; } }",
+      "python": "class Solution:\n    def reverseList(self, head):\n        pass",
+      "javascript": "function reverseList(head) {\n    return head;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "linked-list",
+      "recursion"
+    ],
+    "acceptance": "55.0%",
+    "likes": 7800,
+    "dislikes": 180,
+    "companyTags": [
+      "Amazon",
+      "Uber"
+    ],
+    "premium": false
+  },
+  {
+    "id": 8,
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "category": "HashMap",
+    "description": "Determine if two strings are anagrams of each other using the same character counts.",
+    "constraints": [
+      "1 <= s.length, t.length <= 5 * 10^4",
+      "s and t consist of lowercase English letters"
+    ],
+    "inputFormat": "Two strings",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "s = \"anagram\", t = \"nagaram\"",
+        "output": "true",
+        "explanation": "Both strings have the same character counts."
+      },
+      {
+        "input": "s = \"rat\", t = \"car\"",
+        "output": "false",
+        "explanation": "The strings have different character counts."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean isAnagram(String s, String t) { return false; } }",
+      "python": "class Solution:\n    def isAnagram(self, s, t):\n        pass",
+      "javascript": "function isAnagram(s, t) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "hashmap",
+      "string"
+    ],
+    "acceptance": "54.2%",
+    "likes": 6000,
+    "dislikes": 130,
+    "companyTags": [
+      "Google",
+      "Spotify"
+    ],
+    "premium": false
+  },
+  {
+    "id": 9,
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "category": "Dynamic Programming",
+    "description": "Count the number of ways to climb a staircase of n steps when you can climb 1 or 2 steps at a time.",
+    "constraints": [
+      "1 <= n <= 45"
+    ],
+    "inputFormat": "Integer n",
+    "outputFormat": "Integer number of ways",
+    "examples": [
+      {
+        "input": "n = 2",
+        "output": "2",
+        "explanation": "Two ways: 1+1, 2."
+      },
+      {
+        "input": "n = 3",
+        "output": "3",
+        "explanation": "Three ways: 1+1+1, 1+2, 2+1."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int climbStairs(int n) { return 0; } }",
+      "python": "class Solution:\n    def climbStairs(self, n):\n        pass",
+      "javascript": "function climbStairs(n) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "dynamic-programming",
+      "recursion"
+    ],
+    "acceptance": "58.4%",
+    "likes": 7100,
+    "dislikes": 220,
+    "companyTags": [
+      "Microsoft",
+      "Apple"
+    ],
+    "premium": false
+  },
+  {
+    "id": 10,
+    "title": "Maximum Subarray",
+    "difficulty": "Easy",
+    "category": "Dynamic Programming",
+    "description": "Find the contiguous subarray with the largest sum.",
+    "constraints": [
+      "1 <= nums.length <= 3 * 10^4",
+      "-10^5 <= nums[i] <= 10^5"
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Integer maximum subarray sum",
+    "examples": [
+      {
+        "input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
+        "output": "6",
+        "explanation": "The subarray [4,-1,2,1] has the largest sum."
+      },
+      {
+        "input": "nums = [1]",
+        "output": "1",
+        "explanation": "Single element array has maximum sum 1."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int maxSubArray(int[] nums) { return 0; } }",
+      "python": "class Solution:\n    def maxSubArray(self, nums):\n        pass",
+      "javascript": "function maxSubArray(nums) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "dynamic-programming",
+      "array"
+    ],
+    "acceptance": "46.2%",
+    "likes": 8200,
+    "dislikes": 290,
+    "companyTags": [
+      "Google",
+      "Facebook"
+    ],
+    "premium": false
+  },
+  {
+    "id": 11,
+    "title": "Flood Fill",
+    "difficulty": "Easy",
+    "category": "Recursion",
+    "description": "Perform a flood fill on an image starting from a pixel and return the modified image.",
+    "constraints": [
+      "1 <= image.length, image[0].length <= 50",
+      "0 <= image[i][j], newColor <= 65535"
+    ],
+    "inputFormat": "2D image array, start row, start column, new color",
+    "outputFormat": "2D image array after flood fill",
+    "examples": [
+      {
+        "input": "image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, newColor = 2",
+        "output": "[[2,2,2],[2,2,0],[2,0,1]]",
+        "explanation": "Change connected same-color region to newColor."
+      },
+      {
+        "input": "image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, newColor = 0",
+        "output": "[[0,0,0],[0,0,0]]",
+        "explanation": "No change because the starting pixel already has newColor."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[][] floodFill(int[][] image, int sr, int sc, int newColor) { return image; } }",
+      "python": "class Solution:\n    def floodFill(self, image, sr, sc, newColor):\n        pass",
+      "javascript": "function floodFill(image, sr, sc, newColor) {\n    return image;\n}"
+    },
+    "timeComplexity": "O(m*n)",
+    "spaceComplexity": "O(m*n)",
+    "tags": [
+      "dfs",
+      "recursion"
+    ],
+    "acceptance": "50.9%",
+    "likes": 5300,
+    "dislikes": 160,
+    "companyTags": [
+      "Bloomberg",
+      "Microsoft"
+    ],
+    "premium": false
+  },
+  {
+    "id": 12,
+    "title": "Intersection of Two Arrays",
+    "difficulty": "Easy",
+    "category": "HashMap",
+    "description": "Return the intersection of two arrays, where each element in the result must be unique.",
+    "constraints": [
+      "1 <= nums1.length, nums2.length <= 10^3",
+      "0 <= nums1[i], nums2[i] <= 10^3"
+    ],
+    "inputFormat": "Two integer arrays",
+    "outputFormat": "Array of unique integers",
+    "examples": [
+      {
+        "input": "nums1 = [1,2,2,1], nums2 = [2,2]",
+        "output": "[2]",
+        "explanation": "Only 2 is present in both arrays."
+      },
+      {
+        "input": "nums1 = [4,9,5], nums2 = [9,4,9,8,4]",
+        "output": "[9,4]",
+        "explanation": "Elements 4 and 9 are common."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[] intersection(int[] nums1, int[] nums2) { return new int[0]; } }",
+      "python": "class Solution:\n    def intersection(self, nums1, nums2):\n        pass",
+      "javascript": "function intersection(nums1, nums2) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n+m)",
+    "spaceComplexity": "O(n+m)",
+    "tags": [
+      "hashmap",
+      "array"
+    ],
+    "acceptance": "57.7%",
+    "likes": 5600,
+    "dislikes": 140,
+    "companyTags": [
+      "Apple",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 13,
+    "title": "Fibonacci Number",
+    "difficulty": "Easy",
+    "category": "Dynamic Programming",
+    "description": "Compute the nth Fibonacci number using an efficient approach.",
+    "constraints": [
+      "0 <= n <= 30"
+    ],
+    "inputFormat": "Integer n",
+    "outputFormat": "Integer Fibonacci value",
+    "examples": [
+      {
+        "input": "n = 2",
+        "output": "1",
+        "explanation": "Fibonacci sequence is [0,1,1,...]."
+      },
+      {
+        "input": "n = 5",
+        "output": "5",
+        "explanation": "Fibonacci sequence position 5 equals 5."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int fib(int n) { return 0; } }",
+      "python": "class Solution:\n    def fib(self, n):\n        pass",
+      "javascript": "function fib(n) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "dynamic-programming",
+      "math"
+    ],
+    "acceptance": "57.8%",
+    "likes": 6200,
+    "dislikes": 130,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 14,
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "category": "Math",
+    "description": "Determine whether an integer reads the same forward and backward.",
+    "constraints": [
+      "-2^31 <= x <= 2^31 - 1"
+    ],
+    "inputFormat": "Integer x",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "x = 121",
+        "output": "true",
+        "explanation": "121 reads the same forward and backward."
+      },
+      {
+        "input": "x = -121",
+        "output": "false",
+        "explanation": "Negative numbers are not palindromes."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean isPalindrome(int x) { return false; } }",
+      "python": "class Solution:\n    def isPalindrome(self, x):\n        pass",
+      "javascript": "function isPalindrome(x) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(log n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "math",
+      "string"
+    ],
+    "acceptance": "53.6%",
+    "likes": 5800,
+    "dislikes": 120,
+    "companyTags": [
+      "Netflix",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 15,
+    "title": "Missing Number",
+    "difficulty": "Easy",
+    "category": "Math",
+    "description": "Find the missing number in an array containing n distinct numbers taken from 0 to n.",
+    "constraints": [
+      "1 <= nums.length <= 10^4",
+      "0 <= nums[i] <= nums.length"
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Integer missing number",
+    "examples": [
+      {
+        "input": "nums = [3,0,1]",
+        "output": "2",
+        "explanation": "2 is missing from the range 0 to 3."
+      },
+      {
+        "input": "nums = [0,1]",
+        "output": "2",
+        "explanation": "2 is missing from the range 0 to 2."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int missingNumber(int[] nums) { return 0; } }",
+      "python": "class Solution:\n    def missingNumber(self, nums):\n        pass",
+      "javascript": "function missingNumber(nums) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "math"
+    ],
+    "acceptance": "61.5%",
+    "likes": 7000,
+    "dislikes": 190,
+    "companyTags": [
+      "Google",
+      "Apple"
+    ],
+    "premium": false
+  },
+  {
+    "id": 16,
+    "title": "Min Stack",
+    "difficulty": "Easy",
+    "category": "Stack",
+    "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.",
+    "constraints": [
+      "-10^5 <= val <= 10^5",
+      "At most 3 * 10^4 calls will be made to push, pop, top, and getMin."
+    ],
+    "inputFormat": "Stack operations including push and queries",
+    "outputFormat": "Results of top and getMin operations",
+    "examples": [
+      {
+        "input": "push(-2), push(0), push(-3), getMin(), pop(), top(), getMin()",
+        "output": "[null,null,null,-3,null,0,-2]",
+        "explanation": "Minimum is -3, then after pop it's -2."
+      },
+      {
+        "input": "push(1), push(2), getMin(), pop(), top()",
+        "output": "[null,null,1,null,1]",
+        "explanation": "Minimum remains 1 after pop."
+      }
+    ],
+    "starterCode": {
+      "java": "class MinStack { public MinStack() {} public void push(int val) {} public void pop() {} public int top() { return 0; } public int getMin() { return 0; } }",
+      "python": "class MinStack:\n    def __init__(self):\n        pass\n    def push(self, val):\n        pass\n    def pop(self):\n        pass\n    def top(self):\n        return 0\n    def getMin(self):\n        return 0",
+      "javascript": "class MinStack {\n    constructor() {}\n    push(val) {}\n    pop() {}\n    top() { return 0; }\n    getMin() { return 0; }\n}"
+    },
+    "timeComplexity": "O(1)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "stack",
+      "design"
+    ],
+    "acceptance": "42.5%",
+    "likes": 6400,
+    "dislikes": 210,
+    "companyTags": [
+      "LinkedIn",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 17,
+    "title": "Implement Queue using Stacks",
+    "difficulty": "Easy",
+    "category": "Queue",
+    "description": "Implement a queue using two stacks, supporting enqueue and dequeue operations.",
+    "constraints": [
+      "1 <= val <= 10^6",
+      "At most 10^4 calls will be made to push, pop, peek, and empty."
+    ],
+    "inputFormat": "Queue operations using stack methods",
+    "outputFormat": "Results of pop, peek, and empty operations",
+    "examples": [
+      {
+        "input": "push(1), push(2), peek(), pop(), empty()",
+        "output": "[null,null,1,1,false]",
+        "explanation": "Queue order preserved by using two stacks."
+      },
+      {
+        "input": "push(3), pop(), empty()",
+        "output": "[null,3,true]",
+        "explanation": "After pop the queue is empty."
+      }
+    ],
+    "starterCode": {
+      "java": "class MyQueue { public MyQueue() {} public void push(int x) {} public int pop() { return 0; } public int peek() { return 0; } public boolean empty() { return false; } }",
+      "python": "class MyQueue:\n    def __init__(self):\n        pass\n    def push(self, x):\n        pass\n    def pop(self):\n        return 0\n    def peek(self):\n        return 0\n    def empty(self):\n        return False",
+      "javascript": "class MyQueue {\n    constructor() {}\n    push(x) {}\n    pop() { return 0; }\n    peek() { return 0; }\n    empty() { return false; }\n}"
+    },
+    "timeComplexity": "O(1) amortized",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "stack",
+      "queue"
+    ],
+    "acceptance": "53.1%",
+    "likes": 5900,
+    "dislikes": 160,
+    "companyTags": [
+      "Google",
+      "Microsoft"
+    ],
+    "premium": false
+  },
+  {
+    "id": 18,
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "category": "Arrays",
+    "description": "Remove duplicates in-place from a sorted array and return the new length.",
+    "constraints": [
+      "0 <= nums.length <= 3 * 10^4",
+      "-10^4 <= nums[i] <= 10^4",
+      "nums is sorted in non-decreasing order"
+    ],
+    "inputFormat": "Sorted integer array",
+    "outputFormat": "Length of array after duplicates removed",
+    "examples": [
+      {
+        "input": "nums = [0,0,1,1,1,2,2,3,3,4]",
+        "output": "5",
+        "explanation": "After removing duplicates, first five elements are [0,1,2,3,4]."
+      },
+      {
+        "input": "nums = []",
+        "output": "0",
+        "explanation": "Empty array has length 0."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int removeDuplicates(int[] nums) { return 0; } }",
+      "python": "class Solution:\n    def removeDuplicates(self, nums):\n        pass",
+      "javascript": "function removeDuplicates(nums) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ],
+    "acceptance": "51.2%",
+    "likes": 6200,
+    "dislikes": 180,
+    "companyTags": [
+      "Apple",
+      "Facebook"
+    ],
+    "premium": false
+  },
+  {
+    "id": 19,
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "category": "Bit Manipulation",
+    "description": "Given a non-empty array of integers where every element appears twice except one, find the single one.",
+    "constraints": [
+      "1 <= nums.length <= 3 * 10^4",
+      "-3 * 10^4 <= nums[i] <= 3 * 10^4",
+      "Each element appears twice except for one."
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Integer single number",
+    "examples": [
+      {
+        "input": "nums = [2,2,1]",
+        "output": "1",
+        "explanation": "1 appears once."
+      },
+      {
+        "input": "nums = [4,1,2,1,2]",
+        "output": "4",
+        "explanation": "4 appears once."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int singleNumber(int[] nums) { return 0; } }",
+      "python": "class Solution:\n    def singleNumber(self, nums):\n        pass",
+      "javascript": "function singleNumber(nums) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "bit-manipulation",
+      "array"
+    ],
+    "acceptance": "60.4%",
+    "likes": 7100,
+    "dislikes": 170,
+    "companyTags": [
+      "Google",
+      "Microsoft"
+    ],
+    "premium": false
+  },
+  {
+    "id": 20,
+    "title": "Move Zeroes",
+    "difficulty": "Easy",
+    "category": "Arrays",
+    "description": "Move all zeros in the array to the end while maintaining the relative order of non-zero elements.",
+    "constraints": [
+      "1 <= nums.length <= 10^4",
+      "-10^9 <= nums[i] <= 10^9"
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Modified array with zeros moved to end",
+    "examples": [
+      {
+        "input": "nums = [0,1,0,3,12]",
+        "output": "[1,3,12,0,0]",
+        "explanation": "Non-zero elements keep relative order and zeros move to end."
+      },
+      {
+        "input": "nums = [0]",
+        "output": "[0]",
+        "explanation": "Single zero remains in place."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public void moveZeroes(int[] nums) { } }",
+      "python": "class Solution:\n    def moveZeroes(self, nums):\n        pass",
+      "javascript": "function moveZeroes(nums) {\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ],
+    "acceptance": "51.8%",
+    "likes": 6600,
+    "dislikes": 180,
+    "companyTags": [
+      "Amazon",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 21,
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "category": "Linked List",
+    "description": "Given two non-empty linked lists representing two non-negative integers, add the two numbers and return the sum as a linked list.",
+    "constraints": [
+      "The digits are stored in reverse order",
+      "Each node contains a single digit",
+      "1 <= number of nodes <= 100"
+    ],
+    "inputFormat": "Two linked list heads",
+    "outputFormat": "Linked list head representing sum",
+    "examples": [
+      {
+        "input": "l1 = [2,4,3], l2 = [5,6,4]",
+        "output": "[7,0,8]",
+        "explanation": "342 + 465 = 807."
+      },
+      {
+        "input": "l1 = [0], l2 = [0]",
+        "output": "[0]",
+        "explanation": "0 + 0 = 0."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public ListNode addTwoNumbers(ListNode l1, ListNode l2) { return null; } }",
+      "python": "class Solution:\n    def addTwoNumbers(self, l1, l2):\n        pass",
+      "javascript": "function addTwoNumbers(l1, l2) {\n    return null;\n}"
+    },
+    "timeComplexity": "O(max(m,n))",
+    "spaceComplexity": "O(max(m,n))",
+    "tags": [
+      "linked-list",
+      "math"
+    ],
+    "acceptance": "40.3%",
+    "likes": 9800,
+    "dislikes": 320,
+    "companyTags": [
+      "Amazon",
+      "Facebook"
+    ],
+    "premium": false
+  },
+  {
+    "id": 22,
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "category": "Strings",
+    "description": "Find the length of the longest substring without repeating characters.",
+    "constraints": [
+      "0 <= s.length <= 5 * 10^4",
+      "s consists of English letters, digits, symbols and spaces"
+    ],
+    "inputFormat": "String s",
+    "outputFormat": "Integer length",
+    "examples": [
+      {
+        "input": "s = \"abcabcbb\"",
+        "output": "3",
+        "explanation": "The longest substring without repeating characters is \"abc\"."
+      },
+      {
+        "input": "s = \"bbbbb\"",
+        "output": "1",
+        "explanation": "The longest substring without repeating characters is \"b\"."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int lengthOfLongestSubstring(String s) { return 0; } }",
+      "python": "class Solution:\n    def lengthOfLongestSubstring(self, s):\n        pass",
+      "javascript": "function lengthOfLongestSubstring(s) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(min(n,m))",
+    "tags": [
+      "sliding-window",
+      "hashmap"
+    ],
+    "acceptance": "34.1%",
+    "likes": 9100,
+    "dislikes": 270,
+    "companyTags": [
+      "Google",
+      "LinkedIn"
+    ],
+    "premium": false
+  },
+  {
+    "id": 23,
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "category": "Two Pointers",
+    "description": "Find all unique triplets in the array which gives the sum of zero.",
+    "constraints": [
+      "0 <= nums.length <= 3000",
+      "-10^5 <= nums[i] <= 10^5"
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "List of triplets",
+    "examples": [
+      {
+        "input": "nums = [-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "Two unique triplets sum to zero."
+      },
+      {
+        "input": "nums = []",
+        "output": "[]",
+        "explanation": "No triplets in an empty array."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public List<List<Integer>> threeSum(int[] nums) { return new ArrayList<>(); } }",
+      "python": "class Solution:\n    def threeSum(self, nums):\n        pass",
+      "javascript": "function threeSum(nums) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n^2)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "two-pointers"
+    ],
+    "acceptance": "30.5%",
+    "likes": 9400,
+    "dislikes": 380,
+    "companyTags": [
+      "Google",
+      "Facebook"
+    ],
+    "premium": false
+  },
+  {
+    "id": 24,
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "category": "HashMap",
+    "description": "Group strings that are anagrams of each other.",
+    "constraints": [
+      "1 <= strs.length <= 10^4",
+      "0 <= strs[i].length <= 100",
+      "strs[i] consists of lowercase English letters"
+    ],
+    "inputFormat": "Array of strings",
+    "outputFormat": "List of string groups",
+    "examples": [
+      {
+        "input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+        "output": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]",
+        "explanation": "Anagrams grouped together."
+      },
+      {
+        "input": "strs = [\"\"]",
+        "output": "[[\"\"]]",
+        "explanation": "Single empty string group."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public List<List<String>> groupAnagrams(String[] strs) { return new ArrayList<>(); } }",
+      "python": "class Solution:\n    def groupAnagrams(self, strs):\n        pass",
+      "javascript": "function groupAnagrams(strs) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n * k log k)",
+    "spaceComplexity": "O(n * k)",
+    "tags": [
+      "hashmap",
+      "string"
+    ],
+    "acceptance": "49.8%",
+    "likes": 8600,
+    "dislikes": 240,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 25,
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "category": "Two Pointers",
+    "description": "Given n non-negative integers representing vertical lines, find two lines that together with the x-axis form a container holding the most water.",
+    "constraints": [
+      "2 <= height.length <= 10^5",
+      "0 <= height[i] <= 10^4"
+    ],
+    "inputFormat": "Array of heights",
+    "outputFormat": "Maximum area",
+    "examples": [
+      {
+        "input": "height = [1,8,6,2,5,4,8,3,7]",
+        "output": "49",
+        "explanation": "The largest area is formed by lines at positions 2 and 9."
+      },
+      {
+        "input": "height = [1,1]",
+        "output": "1",
+        "explanation": "Only one possible container."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int maxArea(int[] height) { return 0; } }",
+      "python": "class Solution:\n    def maxArea(self, height):\n        pass",
+      "javascript": "function maxArea(height) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "two-pointers",
+      "greedy"
+    ],
+    "acceptance": "43.2%",
+    "likes": 7900,
+    "dislikes": 250,
+    "companyTags": [
+      "Facebook",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 26,
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "category": "Arrays",
+    "description": "Return an array output where output[i] is equal to the product of all the elements of nums except nums[i].",
+    "constraints": [
+      "2 <= nums.length <= 10^5",
+      "-30 <= nums[i] <= 30",
+      "The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer."
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Array of integers",
+    "examples": [
+      {
+        "input": "nums = [1,2,3,4]",
+        "output": "[24,12,8,6]",
+        "explanation": "Each output is product of all other elements."
+      },
+      {
+        "input": "nums = [-1,1,0,-3,3]",
+        "output": "[0,0,9,0,0]",
+        "explanation": "Zero causes zero product except itself."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[] productExceptSelf(int[] nums) { return new int[0]; } }",
+      "python": "class Solution:\n    def productExceptSelf(self, nums):\n        pass",
+      "javascript": "function productExceptSelf(nums) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "array",
+      "prefix-sum"
+    ],
+    "acceptance": "67.2%",
+    "likes": 8300,
+    "dislikes": 200,
+    "companyTags": [
+      "Google",
+      "Apple"
+    ],
+    "premium": false
+  },
+  {
+    "id": 27,
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "category": "Binary Search",
+    "description": "Search for a target value in a rotated sorted array and return its index or -1 if it is not found.",
+    "constraints": [
+      "1 <= nums.length <= 5000",
+      "-10^4 <= nums[i], target <= 10^4",
+      "nums is rotated at some pivot"
+    ],
+    "inputFormat": "Rotated sorted array and target integer",
+    "outputFormat": "Index of target or -1",
+    "examples": [
+      {
+        "input": "nums = [4,5,6,7,0,1,2], target = 0",
+        "output": "4",
+        "explanation": "0 is located at index 4."
+      },
+      {
+        "input": "nums = [4,5,6,7,0,1,2], target = 3",
+        "output": "-1",
+        "explanation": "3 is not in the array."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int search(int[] nums, int target) { return -1; } }",
+      "python": "class Solution:\n    def search(self, nums, target):\n        pass",
+      "javascript": "function search(nums, target) {\n    return -1;\n}"
+    },
+    "timeComplexity": "O(log n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "binary-search",
+      "array"
+    ],
+    "acceptance": "37.8%",
+    "likes": 7100,
+    "dislikes": 260,
+    "companyTags": [
+      "Amazon",
+      "Microsoft"
+    ],
+    "premium": false
+  },
+  {
+    "id": 28,
+    "title": "Course Schedule",
+    "difficulty": "Medium",
+    "category": "Graphs",
+    "description": "Determine if you can finish all courses given prerequisite pairs, which is equivalent to checking if the directed graph has a cycle.",
+    "constraints": [
+      "1 <= numCourses <= 2000",
+      "0 <= prerequisites.length <= 5000",
+      "prerequisites[i].length == 2"
+    ],
+    "inputFormat": "Number of courses and list of prerequisite pairs",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "numCourses = 2, prerequisites = [[1,0]]",
+        "output": "true",
+        "explanation": "Course 0 can be taken before course 1."
+      },
+      {
+        "input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
+        "output": "false",
+        "explanation": "There is a cycle between course 0 and 1."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean canFinish(int numCourses, int[][] prerequisites) { return false; } }",
+      "python": "class Solution:\n    def canFinish(self, numCourses, prerequisites):\n        pass",
+      "javascript": "function canFinish(numCourses, prerequisites) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(V+E)",
+    "spaceComplexity": "O(V+E)",
+    "tags": [
+      "graph",
+      "topological-sort"
+    ],
+    "acceptance": "41.9%",
+    "likes": 8800,
+    "dislikes": 260,
+    "companyTags": [
+      "Uber",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 29,
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "category": "Graphs",
+    "description": "Given a 2D grid map of '1's and '0's, count the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.",
+    "constraints": [
+      "m == grid.length",
+      "n == grid[i].length",
+      "1 <= m, n <= 300",
+      "grid[i][j] is '0' or '1'"
+    ],
+    "inputFormat": "2D grid array",
+    "outputFormat": "Integer island count",
+    "examples": [
+      {
+        "input": "grid = [[\"1\",\"1\",\"1\"],[\"0\",\"1\",\"0\"],[\"1\",\"1\",\"1\"]]",
+        "output": "1",
+        "explanation": "All land cells are connected into one island."
+      },
+      {
+        "input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]",
+        "output": "3",
+        "explanation": "There are three separate islands."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int numIslands(char[][] grid) { return 0; } }",
+      "python": "class Solution:\n    def numIslands(self, grid):\n        pass",
+      "javascript": "function numIslands(grid) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(m*n)",
+    "spaceComplexity": "O(m*n)",
+    "tags": [
+      "dfs",
+      "bfs"
+    ],
+    "acceptance": "47.3%",
+    "likes": 8200,
+    "dislikes": 280,
+    "companyTags": [
+      "Google",
+      "Adobe"
+    ],
+    "premium": false
+  },
+  {
+    "id": 30,
+    "title": "Clone Graph",
+    "difficulty": "Medium",
+    "category": "Graphs",
+    "description": "Given a reference to a node in a connected undirected graph, return a deep copy of the graph.",
+    "constraints": [
+      "1 <= Node.val <= 100",
+      "The graph is connected",
+      "No duplicate edges or self-loops"
+    ],
+    "inputFormat": "Graph adjacency list representation",
+    "outputFormat": "Adjacency list of cloned graph",
+    "examples": [
+      {
+        "input": "adjList = [[2,4],[1,3],[2,4],[1,3]]",
+        "output": "[[2,4],[1,3],[2,4],[1,3]]",
+        "explanation": "The graph is cloned node by node."
+      },
+      {
+        "input": "adjList = [[]]",
+        "output": "[[]]",
+        "explanation": "Single node graph with no edges."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public Node cloneGraph(Node node) { return node; } }",
+      "python": "class Solution:\n    def cloneGraph(self, node):\n        pass",
+      "javascript": "function cloneGraph(node) {\n    return node;\n}"
+    },
+    "timeComplexity": "O(V+E)",
+    "spaceComplexity": "O(V)",
+    "tags": [
+      "graph",
+      "dfs"
+    ],
+    "acceptance": "38.4%",
+    "likes": 7700,
+    "dislikes": 270,
+    "companyTags": [
+      "Microsoft",
+      "Amazon"
+    ],
+    "premium": true
+  },
+  {
+    "id": 31,
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "category": "Backtracking",
+    "description": "Given a set of candidate numbers and a target, return all unique combinations where the candidate numbers sum to target.",
+    "constraints": [
+      "1 <= candidates.length <= 30",
+      "1 <= candidates[i] <= 200",
+      "1 <= target <= 500"
+    ],
+    "inputFormat": "Array of candidate integers and target integer",
+    "outputFormat": "List of integer combinations",
+    "examples": [
+      {
+        "input": "candidates = [2,3,6,7], target = 7",
+        "output": "[[2,2,3],[7]]",
+        "explanation": "2+2+3 and 7 are valid combinations."
+      },
+      {
+        "input": "candidates = [2,3,5], target = 8",
+        "output": "[[2,2,2,2],[2,3,3],[3,5]]",
+        "explanation": "Three combinations reach the target."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public List<List<Integer>> combinationSum(int[] candidates, int target) { return new ArrayList<>(); } }",
+      "python": "class Solution:\n    def combinationSum(self, candidates, target):\n        pass",
+      "javascript": "function combinationSum(candidates, target) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n * 2^(target/min(candidates)))",
+    "spaceComplexity": "O(target/min(candidates))",
+    "tags": [
+      "backtracking",
+      "dfs"
+    ],
+    "acceptance": "49.6%",
+    "likes": 8100,
+    "dislikes": 300,
+    "companyTags": [
+      "Google",
+      "Adobe"
+    ],
+    "premium": false
+  },
+  {
+    "id": 32,
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "category": "Dynamic Programming",
+    "description": "Given coins of different denominations and a total amount, compute the fewest number of coins needed to make up that amount.",
+    "constraints": [
+      "0 <= amount <= 10^4",
+      "1 <= coins.length <= 12",
+      "1 <= coins[i] <= 2^31 - 1"
+    ],
+    "inputFormat": "Array of coin denominations and target amount",
+    "outputFormat": "Minimum number of coins or -1 if impossible",
+    "examples": [
+      {
+        "input": "coins = [1,2,5], amount = 11",
+        "output": "3",
+        "explanation": "11 can be made with 5+5+1."
+      },
+      {
+        "input": "coins = [2], amount = 3",
+        "output": "-1",
+        "explanation": "3 cannot be made with coins of 2."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int coinChange(int[] coins, int amount) { return -1; } }",
+      "python": "class Solution:\n    def coinChange(self, coins, amount):\n        pass",
+      "javascript": "function coinChange(coins, amount) {\n    return -1;\n}"
+    },
+    "timeComplexity": "O(amount * n)",
+    "spaceComplexity": "O(amount)",
+    "tags": [
+      "dynamic-programming",
+      "memoization"
+    ],
+    "acceptance": "33.2%",
+    "likes": 7800,
+    "dislikes": 340,
+    "companyTags": [
+      "Amazon",
+      "Google"
+    ],
+    "premium": true
+  },
+  {
+    "id": 33,
+    "title": "Kth Largest Element",
+    "difficulty": "Medium",
+    "category": "Heaps",
+    "description": "Find the kth largest element in an unsorted array.",
+    "constraints": [
+      "1 <= k <= nums.length <= 10^4",
+      "-10^4 <= nums[i] <= 10^4"
+    ],
+    "inputFormat": "Array of integers and integer k",
+    "outputFormat": "Integer kth largest element",
+    "examples": [
+      {
+        "input": "nums = [3,2,1,5,6,4], k = 2",
+        "output": "5",
+        "explanation": "The second largest element is 5."
+      },
+      {
+        "input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
+        "output": "4",
+        "explanation": "The fourth largest element is 4."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int findKthLargest(int[] nums, int k) { return 0; } }",
+      "python": "class Solution:\n    def findKthLargest(self, nums, k):\n        pass",
+      "javascript": "function findKthLargest(nums, k) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n log k)",
+    "spaceComplexity": "O(k)",
+    "tags": [
+      "heap",
+      "selection"
+    ],
+    "acceptance": "61.0%",
+    "likes": 7200,
+    "dislikes": 250,
+    "companyTags": [
+      "Google",
+      "Uber"
+    ],
+    "premium": false
+  },
+  {
+    "id": 34,
+    "title": "Top K Frequent Elements",
+    "difficulty": "Medium",
+    "category": "Heap",
+    "description": "Return the k most frequent elements in the array.",
+    "constraints": [
+      "1 <= nums.length <= 10^5",
+      "-10^4 <= nums[i] <= 10^4",
+      "k is in the range [1, number of unique elements]"
+    ],
+    "inputFormat": "Array of integers and integer k",
+    "outputFormat": "Array of k integers",
+    "examples": [
+      {
+        "input": "nums = [1,1,1,2,2,3], k = 2",
+        "output": "[1,2]",
+        "explanation": "1 appears 3 times and 2 appears 2 times."
+      },
+      {
+        "input": "nums = [1], k = 1",
+        "output": "[1]",
+        "explanation": "Only element is returned."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[] topKFrequent(int[] nums, int k) { return new int[0]; } }",
+      "python": "class Solution:\n    def topKFrequent(self, nums, k):\n        pass",
+      "javascript": "function topKFrequent(nums, k) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n log k)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "heap",
+      "hashmap"
+    ],
+    "acceptance": "67.1%",
+    "likes": 7600,
+    "dislikes": 230,
+    "companyTags": [
+      "Twitter",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 35,
+    "title": "Spiral Matrix",
+    "difficulty": "Medium",
+    "category": "Matrix",
+    "description": "Return all elements of the matrix in spiral order.",
+    "constraints": [
+      "m == matrix.length",
+      "n == matrix[i].length",
+      "1 <= m, n <= 10",
+      "-100 <= matrix[i][j] <= 100"
+    ],
+    "inputFormat": "2D integer matrix",
+    "outputFormat": "List of integers",
+    "examples": [
+      {
+        "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+        "output": "[1,2,3,6,9,8,7,4,5]",
+        "explanation": "Spiral order of the matrix."
+      },
+      {
+        "input": "matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]",
+        "output": "[1,2,3,4,8,12,11,10,9,5,6,7]",
+        "explanation": "Spiral traversal of a rectangular matrix."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public List<Integer> spiralOrder(int[][] matrix) { return new ArrayList<>(); } }",
+      "python": "class Solution:\n    def spiralOrder(self, matrix):\n        pass",
+      "javascript": "function spiralOrder(matrix) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(m*n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "matrix",
+      "simulation"
+    ],
+    "acceptance": "42.3%",
+    "likes": 6800,
+    "dislikes": 210,
+    "companyTags": [
+      "Microsoft",
+      "Google"
+    ],
+    "premium": false
+  },
+  {
+    "id": 36,
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "category": "Matrix",
+    "description": "Rotate an n x n 2D matrix by 90 degrees clockwise in place.",
+    "constraints": [
+      "n == matrix.length",
+      "n == matrix[i].length",
+      "1 <= n <= 20",
+      "-1000 <= matrix[i][j] <= 1000"
+    ],
+    "inputFormat": "2D integer matrix",
+    "outputFormat": "Rotated matrix",
+    "examples": [
+      {
+        "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+        "output": "[[7,4,1],[8,5,2],[9,6,3]]",
+        "explanation": "Matrix rotated clockwise."
+      },
+      {
+        "input": "matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]",
+        "output": "[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]",
+        "explanation": "4x4 matrix rotated in place."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public void rotate(int[][] matrix) { } }",
+      "python": "class Solution:\n    def rotate(self, matrix):\n        pass",
+      "javascript": "function rotate(matrix) {\n}"
+    },
+    "timeComplexity": "O(n^2)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "matrix",
+      "simulation"
+    ],
+    "acceptance": "55.5%",
+    "likes": 7200,
+    "dislikes": 200,
+    "companyTags": [
+      "Google",
+      "Bloomberg"
+    ],
+    "premium": false
+  },
+  {
+    "id": 37,
+    "title": "Jump Game",
+    "difficulty": "Medium",
+    "category": "Greedy",
+    "description": "Given an array of non-negative integers where each element represents your maximum jump length, determine if you can reach the last index.",
+    "constraints": [
+      "1 <= nums.length <= 3 * 10^4",
+      "0 <= nums[i] <= 10^5"
+    ],
+    "inputFormat": "Array of integers",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "nums = [2,3,1,1,4]",
+        "output": "true",
+        "explanation": "You can jump from index 0 to 4."
+      },
+      {
+        "input": "nums = [3,2,1,0,4]",
+        "output": "false",
+        "explanation": "You get stuck at index 3."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean canJump(int[] nums) { return false; } }",
+      "python": "class Solution:\n    def canJump(self, nums):\n        pass",
+      "javascript": "function canJump(nums) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "greedy",
+      "array"
+    ],
+    "acceptance": "43.5%",
+    "likes": 8300,
+    "dislikes": 310,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 38,
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "category": "Backtracking",
+    "description": "Given a 2D board and a word, find if the word exists in the grid by sequentially adjacent cells.",
+    "constraints": [
+      "1 <= board.length <= 6",
+      "1 <= board[i].length <= 6",
+      "1 <= word.length <= 15"
+    ],
+    "inputFormat": "2D character board and word string",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"",
+        "output": "true",
+        "explanation": "Word is found in the board."
+      },
+      {
+        "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"",
+        "output": "true",
+        "explanation": "Word is found using adjacent cells."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean exist(char[][] board, String word) { return false; } }",
+      "python": "class Solution:\n    def exist(self, board, word):\n        pass",
+      "javascript": "function exist(board, word) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(m * n * 4^k)",
+    "spaceComplexity": "O(k)",
+    "tags": [
+      "backtracking",
+      "dfs"
+    ],
+    "acceptance": "42.1%",
+    "likes": 7600,
+    "dislikes": 290,
+    "companyTags": [
+      "Facebook",
+      "Google"
+    ],
+    "premium": true
+  },
+  {
+    "id": 39,
+    "title": "Validate Binary Search Tree",
+    "difficulty": "Medium",
+    "category": "Trees",
+    "description": "Determine if a binary tree is a valid binary search tree.",
+    "constraints": [
+      "The number of nodes is in the range [1, 10^4]",
+      "-2^31 <= Node.val <= 2^31 - 1"
+    ],
+    "inputFormat": "Binary tree root",
+    "outputFormat": "Boolean",
+    "examples": [
+      {
+        "input": "root = [2,1,3]",
+        "output": "true",
+        "explanation": "Tree satisfies BST properties."
+      },
+      {
+        "input": "root = [5,1,4,null,null,3,6]",
+        "output": "false",
+        "explanation": "4 is not valid in the right subtree of 5."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public boolean isValidBST(TreeNode root) { return false; } }",
+      "python": "class Solution:\n    def isValidBST(self, root):\n        pass",
+      "javascript": "function isValidBST(root) {\n    return false;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "tree",
+      "dfs"
+    ],
+    "acceptance": "34.8%",
+    "likes": 8200,
+    "dislikes": 310,
+    "companyTags": [
+      "Microsoft",
+      "Amazon"
+    ],
+    "premium": false
+  },
+  {
+    "id": 40,
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "category": "Sorting",
+    "description": "Given a collection of intervals, merge all overlapping intervals.",
+    "constraints": [
+      "1 <= intervals.length <= 10^4",
+      "intervals[i].length == 2",
+      "0 <= start <= end <= 10^4"
+    ],
+    "inputFormat": "List of intervals",
+    "outputFormat": "List of merged intervals",
+    "examples": [
+      {
+        "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
+        "output": "[[1,6],[8,10],[15,18]]",
+        "explanation": "Intervals [1,3] and [2,6] overlap and merge."
+      },
+      {
+        "input": "intervals = [[1,4],[4,5]]",
+        "output": "[[1,5]]",
+        "explanation": "Adjacent intervals merge into one."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[][] merge(int[][] intervals) { return new int[0][0]; } }",
+      "python": "class Solution:\n    def merge(self, intervals):\n        pass",
+      "javascript": "function merge(intervals) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n log n)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "array",
+      "sorting"
+    ],
+    "acceptance": "45.6%",
+    "likes": 7500,
+    "dislikes": 260,
+    "companyTags": [
+      "Google",
+      "Bloomberg"
+    ],
+    "premium": false
+  },
+  {
+    "id": 41,
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "category": "Binary Search",
+    "description": "Find the median of two sorted arrays in O(log(m+n)) time.",
+    "constraints": [
+      "nums1.length == m",
+      "nums2.length == n",
+      "0 <= m, n <= 1000",
+      "1 <= m + n <= 2000"
+    ],
+    "inputFormat": "Two sorted arrays",
+    "outputFormat": "Median as a double",
+    "examples": [
+      {
+        "input": "nums1 = [1,3], nums2 = [2]",
+        "output": "2.0",
+        "explanation": "Combined sorted array is [1,2,3]."
+      },
+      {
+        "input": "nums1 = [1,2], nums2 = [3,4]",
+        "output": "2.5",
+        "explanation": "Combined sorted array is [1,2,3,4]."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public double findMedianSortedArrays(int[] nums1, int[] nums2) { return 0.0; } }",
+      "python": "class Solution:\n    def findMedianSortedArrays(self, nums1, nums2):\n        pass",
+      "javascript": "function findMedianSortedArrays(nums1, nums2) {\n    return 0.0;\n}"
+    },
+    "timeComplexity": "O(log(min(m,n)))",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "binary-search",
+      "divide-and-conquer"
+    ],
+    "acceptance": "30.1%",
+    "likes": 9700,
+    "dislikes": 410,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": true
+  },
+  {
+    "id": 42,
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "category": "Two Pointers",
+    "description": "Given n non-negative integers representing an elevation map, compute how much water it can trap after raining.",
+    "constraints": [
+      "1 <= height.length <= 2 * 10^4",
+      "0 <= height[i] <= 10^5"
+    ],
+    "inputFormat": "Array of integers representing elevation heights",
+    "outputFormat": "Integer amount of trapped water",
+    "examples": [
+      {
+        "input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+        "output": "6",
+        "explanation": "Water is trapped in the valleys between bars."
+      },
+      {
+        "input": "height = [4,2,0,3,2,5]",
+        "output": "9",
+        "explanation": "Multiple valleys trap water."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int trap(int[] height) { return 0; } }",
+      "python": "class Solution:\n    def trap(self, height):\n        pass",
+      "javascript": "function trap(height) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "tags": [
+      "two-pointers",
+      "stack"
+    ],
+    "acceptance": "41.8%",
+    "likes": 8500,
+    "dislikes": 330,
+    "companyTags": [
+      "Google",
+      "Microsoft"
+    ],
+    "premium": true
+  },
+  {
+    "id": 43,
+    "title": "Merge K Sorted Lists",
+    "difficulty": "Hard",
+    "category": "Heap",
+    "description": "Merge k sorted linked lists and return it as one sorted list.",
+    "constraints": [
+      "0 <= k <= 10^4",
+      "0 <= total nodes <= 10^4"
+    ],
+    "inputFormat": "Array of linked list heads",
+    "outputFormat": "Merged sorted linked list head",
+    "examples": [
+      {
+        "input": "lists = [[1,4,5],[1,3,4],[2,6]]",
+        "output": "[1,1,2,3,4,4,5,6]",
+        "explanation": "All lists are merged into one sorted list."
+      },
+      {
+        "input": "lists = []",
+        "output": "[]",
+        "explanation": "No lists to merge."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public ListNode mergeKLists(ListNode[] lists) { return null; } }",
+      "python": "class Solution:\n    def mergeKLists(self, lists):\n        pass",
+      "javascript": "function mergeKLists(lists) {\n    return null;\n}"
+    },
+    "timeComplexity": "O(N log k)",
+    "spaceComplexity": "O(k)",
+    "tags": [
+      "heap",
+      "linked-list"
+    ],
+    "acceptance": "34.4%",
+    "likes": 8800,
+    "dislikes": 360,
+    "companyTags": [
+      "Amazon",
+      "LinkedIn"
+    ],
+    "premium": true
+  },
+  {
+    "id": 44,
+    "title": "Serialize and Deserialize Binary Tree",
+    "difficulty": "Hard",
+    "category": "Trees",
+    "description": "Design an algorithm to serialize and deserialize a binary tree.",
+    "constraints": [
+      "The number of nodes is in the range [0, 10^4]",
+      "-1000 <= Node.val <= 1000"
+    ],
+    "inputFormat": "Binary tree root for serialize or string data for deserialize",
+    "outputFormat": "String for serialize or tree root for deserialize",
+    "examples": [
+      {
+        "input": "root = [1,2,3,null,null,4,5]",
+        "output": "\"1,2,null,null,3,4,null,null,5,null,null\"",
+        "explanation": "Tree is serialized in preorder and can be deserialized back."
+      },
+      {
+        "input": "root = []",
+        "output": "\"null\"",
+        "explanation": "Empty tree serializes to null."
+      }
+    ],
+    "starterCode": {
+      "java": "class Codec { public String serialize(TreeNode root) { return \"\"; } public TreeNode deserialize(String data) { return null; } }",
+      "python": "class Codec:\n    def serialize(self, root):\n        pass\n    def deserialize(self, data):\n        pass",
+      "javascript": "var Codec = function() {}; Codec.prototype.serialize = function(root) { return \"\"; }; Codec.prototype.deserialize = function(data) { return null; };"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "tree",
+      "design"
+    ],
+    "acceptance": "45.7%",
+    "likes": 9000,
+    "dislikes": 380,
+    "companyTags": [
+      "Facebook",
+      "Google"
+    ],
+    "premium": true
+  },
+  {
+    "id": 45,
+    "title": "Word Ladder",
+    "difficulty": "Hard",
+    "category": "Graphs",
+    "description": "Given two words and a dictionary, return the length of the shortest transformation sequence from beginWord to endWord.",
+    "constraints": [
+      "1 <= word.length <= 10",
+      "1 <= wordList.length <= 5000"
+    ],
+    "inputFormat": "beginWord, endWord, and list of intermediate words",
+    "outputFormat": "Length of shortest transformation sequence",
+    "examples": [
+      {
+        "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+        "output": "5",
+        "explanation": "hit -> hot -> dot -> dog -> cog."
+      },
+      {
+        "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+        "output": "0",
+        "explanation": "No valid transformation to cog."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int ladderLength(String beginWord, String endWord, List<String> wordList) { return 0; } }",
+      "python": "class Solution:\n    def ladderLength(self, beginWord, endWord, wordList):\n        pass",
+      "javascript": "function ladderLength(beginWord, endWord, wordList) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(M^2 * N)",
+    "spaceComplexity": "O(M^2 * N)",
+    "tags": [
+      "graph",
+      "bfs"
+    ],
+    "acceptance": "33.6%",
+    "likes": 8600,
+    "dislikes": 390,
+    "companyTags": [
+      "Amazon",
+      "Google"
+    ],
+    "premium": true
+  },
+  {
+    "id": 46,
+    "title": "N-Queens",
+    "difficulty": "Hard",
+    "category": "Backtracking",
+    "description": "Place n queens on an n x n chessboard so that no two queens attack each other and return all solutions.",
+    "constraints": [
+      "1 <= n <= 9"
+    ],
+    "inputFormat": "Integer n",
+    "outputFormat": "List of board configurations",
+    "examples": [
+      {
+        "input": "n = 4",
+        "output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]",
+        "explanation": "Two valid solutions for 4 queens."
+      },
+      {
+        "input": "n = 1",
+        "output": "[[\"Q\"]]",
+        "explanation": "Single queen on a 1x1 board."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public List<List<String>> solveNQueens(int n) { return new ArrayList<>(); } }",
+      "python": "class Solution:\n    def solveNQueens(self, n):\n        pass",
+      "javascript": "function solveNQueens(n) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n!)",
+    "spaceComplexity": "O(n^2)",
+    "tags": [
+      "backtracking",
+      "dfs"
+    ],
+    "acceptance": "44.5%",
+    "likes": 7800,
+    "dislikes": 320,
+    "companyTags": [
+      "Google",
+      "Microsoft"
+    ],
+    "premium": true
+  },
+  {
+    "id": 47,
+    "title": "LFU Cache",
+    "difficulty": "Hard",
+    "category": "Design",
+    "description": "Design and implement a data structure for Least Frequently Used (LFU) cache.",
+    "constraints": [
+      "0 <= capacity <= 10^4",
+      "0 <= key, value <= 10^5",
+      "At most 2 * 10^5 calls will be made to get and put."
+    ],
+    "inputFormat": "Cache capacity and sequence of operations",
+    "outputFormat": "Values returned by get operations",
+    "examples": [
+      {
+        "input": "capacity = 2, operations = [put(1,1), put(2,2), get(1), put(3,3), get(2), get(3)]",
+        "output": "[null,null,1,null,-1,3]",
+        "explanation": "When capacity is exceeded, least frequently used key is evicted."
+      },
+      {
+        "input": "capacity = 0, operations = [put(1,1), get(1)]",
+        "output": "[null,-1]",
+        "explanation": "Cache has no capacity to store items."
+      }
+    ],
+    "starterCode": {
+      "java": "class LFUCache { public LFUCache(int capacity) {} public int get(int key) { return -1; } public void put(int key, int value) {} }",
+      "python": "class LFUCache:\n    def __init__(self, capacity):\n        pass\n    def get(self, key):\n        return -1\n    def put(self, key, value):\n        pass",
+      "javascript": "class LFUCache {\n    constructor(capacity) {}\n    get(key) { return -1; }\n    put(key, value) {}\n}"
+    },
+    "timeComplexity": "O(1)",
+    "spaceComplexity": "O(capacity)",
+    "tags": [
+      "design",
+      "data-structure"
+    ],
+    "acceptance": "40.2%",
+    "likes": 8200,
+    "dislikes": 390,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": true
+  },
+  {
+    "id": 48,
+    "title": "Sliding Window Maximum",
+    "difficulty": "Hard",
+    "category": "Deque",
+    "description": "Given an array and a sliding window size k, return the maximum value in each window.",
+    "constraints": [
+      "1 <= nums.length <= 10^5",
+      "-10^4 <= nums[i] <= 10^4",
+      "1 <= k <= nums.length"
+    ],
+    "inputFormat": "Array of integers and integer k",
+    "outputFormat": "Array of window maximums",
+    "examples": [
+      {
+        "input": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
+        "output": "[3,3,5,5,6,7]",
+        "explanation": "Maximum values for each sliding window."
+      },
+      {
+        "input": "nums = [1], k = 1",
+        "output": "[1]",
+        "explanation": "Single window equals single element."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int[] maxSlidingWindow(int[] nums, int k) { return new int[0]; } }",
+      "python": "class Solution:\n    def maxSlidingWindow(self, nums, k):\n        pass",
+      "javascript": "function maxSlidingWindow(nums, k) {\n    return [];\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(k)",
+    "tags": [
+      "deque",
+      "sliding-window"
+    ],
+    "acceptance": "38.4%",
+    "likes": 7600,
+    "dislikes": 320,
+    "companyTags": [
+      "Google",
+      "Facebook"
+    ],
+    "premium": true
+  },
+  {
+    "id": 49,
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "category": "Stack",
+    "description": "Find the area of the largest rectangle in a histogram represented by bar heights.",
+    "constraints": [
+      "1 <= heights.length <= 10^5",
+      "0 <= heights[i] <= 10^4"
+    ],
+    "inputFormat": "Array of bar heights",
+    "outputFormat": "Integer largest rectangle area",
+    "examples": [
+      {
+        "input": "heights = [2,1,5,6,2,3]",
+        "output": "10",
+        "explanation": "Largest rectangle is 5 x 2 area."
+      },
+      {
+        "input": "heights = [2,4]",
+        "output": "4",
+        "explanation": "Largest rectangle is 2 x 2 area."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int largestRectangleArea(int[] heights) { return 0; } }",
+      "python": "class Solution:\n    def largestRectangleArea(self, heights):\n        pass",
+      "javascript": "function largestRectangleArea(heights) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(n)",
+    "tags": [
+      "stack",
+      "monotonic-stack"
+    ],
+    "acceptance": "40.5%",
+    "likes": 8300,
+    "dislikes": 340,
+    "companyTags": [
+      "Google",
+      "Microsoft"
+    ],
+    "premium": true
+  },
+  {
+    "id": 50,
+    "title": "Edit Distance",
+    "difficulty": "Hard",
+    "category": "Dynamic Programming",
+    "description": "Compute the minimum number of operations required to convert one word into another using insertions, deletions, and replacements.",
+    "constraints": [
+      "0 <= word1.length, word2.length <= 500",
+      "word1 and word2 consist of lowercase English letters"
+    ],
+    "inputFormat": "Two strings word1 and word2",
+    "outputFormat": "Integer minimum edit distance",
+    "examples": [
+      {
+        "input": "word1 = \"horse\", word2 = \"ros\"",
+        "output": "3",
+        "explanation": "horse -> rorse -> rose -> ros."
+      },
+      {
+        "input": "word1 = \"intention\", word2 = \"execution\"",
+        "output": "5",
+        "explanation": "Five operations are needed to transform intention to execution."
+      }
+    ],
+    "starterCode": {
+      "java": "class Solution { public int minDistance(String word1, String word2) { return 0; } }",
+      "python": "class Solution:\n    def minDistance(self, word1, word2):\n        pass",
+      "javascript": "function minDistance(word1, word2) {\n    return 0;\n}"
+    },
+    "timeComplexity": "O(m*n)",
+    "spaceComplexity": "O(m*n)",
+    "tags": [
+      "dynamic-programming",
+      "string"
+    ],
+    "acceptance": "41.2%",
+    "likes": 8400,
+    "dislikes": 370,
+    "companyTags": [
+      "Google",
+      "Amazon"
+    ],
+    "premium": true
+  }
+]
