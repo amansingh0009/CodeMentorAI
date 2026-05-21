@@ -37,7 +37,7 @@ services:
       - 3000:3000
     environment:
       - PORT=3000
-      - REACT_APP_API_BASE_URL=http://localhost:8080/api
+      - REACT_APP_API_BASE_URL=https://codementorai-backend-mezp.onrender.com/api
     depends_on:
       - backend
 
