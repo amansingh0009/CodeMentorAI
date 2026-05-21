@@ -85,7 +85,7 @@ const LoginPage = () => {
       navigate('/');
     } catch (err) {
       if (!err.response) {
-        setError('Backend is not reachable. Please start the backend server on port 8080.');
+        setError('Backend is not reachable. Please check the deployed API URL and try again.');
         return;
       }
       setError(err.response?.data?.message || 'Invalid username or password.');
